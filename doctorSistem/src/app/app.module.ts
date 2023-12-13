@@ -18,18 +18,28 @@ import {MatSortModule} from '@angular/material/sort';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatDialogModule} from '@angular/material/dialog';
-// import { AppRoutingModule } from './app-routing.module';
+import {AppRoutingModule } from './app-routing.module';
 import {MatSelectModule} from '@angular/material/select';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatRadioModule} from '@angular/material/radio';
-import {MatSliderModule} from '@angular/material/slider';
 import {MatDatepickerModule} from '@angular/material/datepicker';
-import { AppComponent } from './app.component';
+import {AppComponent } from './app.component';
+import { MatSliderModule } from '@angular/material/slider';
+import LoginComponent from './views/login/login.component';
+import HomeAdminComponent from './views/home-admin/home-admin.component';
+import DashboardComponent from './views/dashboard/dashboard.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+AppComponent,
+LoginComponent,
+HomeAdminComponent,
+DashboardComponent,
+
+
+  ],
   imports: [
     CommonModule,
     BrowserModule,
@@ -50,7 +60,7 @@ MatSortModule,
 MatProgressSpinnerModule,
 MatStepperModule,
 MatDialogModule,
-// AppRoutingModule,
+AppRoutingModule,
 MatSelectModule,
 MatCheckboxModule,
 MatRadioModule,
@@ -58,7 +68,7 @@ MatSliderModule,
 MatDatepickerModule,
 // MatNativeDateModule,
 // ReactiveFormsModule,
-
+HttpClientModule,
 
   ],
   providers: [
@@ -67,7 +77,7 @@ MatDatepickerModule,
   ],
   bootstrap: [
 
-    // AppComponent  
+    AppComponent  
   ]
 
 

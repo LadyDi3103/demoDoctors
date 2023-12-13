@@ -8,16 +8,6 @@ import FooterComponent from '../../shared/shared-components/footer/footer.compon
 
 @Component({
   selector: 'app-login',
-  standalone: true,
-  imports: [
-   
-    CommonModule,
-    FooterComponent,
-    HeaderComponent,
-    CarouselComponent,
-  
-
-  ],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })

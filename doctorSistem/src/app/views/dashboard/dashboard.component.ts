@@ -9,13 +9,6 @@ import HeaderComponent from '../../shared/shared-components/header/header.compon
 
 @Component({
   selector: 'app-dashboard',
-  standalone: true,
-  imports: [
-    CommonModule,
-    RouterModule,
-    SidebarComponent,
-    HeaderComponent
-  ],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
 })
